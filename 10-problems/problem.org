@@ -1,0 +1,192 @@
+#+TITLE: Problem Set
+#+AUTHOR: Jinghui Hu
+#+EMAIL: hujinghui@buaa.edu.cn
+#+DATE: <2021-11-13 Mon 15:58:19>
+#+HTML_LINK_UP: ../readme.html
+#+HTML_LINK_HOME: ../index.html
+#+SETUPFILE: ~/.emacs.d/site-lisp/org-html-themes/setup/theme-readtheorg-local.setup
+#+TAGS: leetcode programming
+
+* 数组 Array
+  - [X] [[https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/][LC026]] [[file:ch01_array/solution026.go][删除有序数组中的重复项]]
+  - [X] [[https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array-ii/][LC080]] [[file:ch01_array/solution080.go][删除有序数组中的重复项 II]]
+  - [X] [[https://leetcode-cn.com/problems/search-in-rotated-sorted-array/][LC033]] [[file:ch01_array/solution033.go][搜索旋转排序数组]]
+  - [ ] [[https://leetcode-cn.com/problems/search-in-rotated-sorted-array-ii/][LC081]] [[file:ch01_array/solution081.go][搜索旋转排序数组 II]]
+  - [ ] [[https://leetcode-cn.com/problems/rotate-array/][LC189]] [[file:ch01_array/solution189.go][旋转数组]]
+  - [ ] [[https://leetcode-cn.com/problems/median-of-two-sorted-arrays/][LC004]] [[file:ch01_array/solution004.go][寻找两个正序数组的中位数]]
+  - [ ] [[https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/][LC034]] [[file:ch01_array/solution034.go][在排序数组中查找元素的第一个和最后一个位置]]
+  - [ ] [[https://leetcode-cn.com/problems/longest-consecutive-sequence/][LC128]] [[file:ch01_array/solution128.go][最长连续序列]]
+  - [X] [[https://leetcode-cn.com/problems/two-sum/][LC001]] [[file:ch01_array/solution001.go][两数之和]]
+  - [ ] [[https://leetcode-cn.com/problems/3sum/][LC015]] [[file:ch01_array/solution015.go][三数之和]]
+  - [ ] [[https://leetcode-cn.com/problems/3sum-closest/][LC016]] [[file:ch01_array/solution016.go][最接近的三数之和]]
+  - [ ] [[https://leetcode-cn.com/problems/4sum/][LC018]] [[file:ch01_array/solution018.go][四数之和]]
+  - [ ] [[https://leetcode-cn.com/problems/remove-element/][LC027]] [[file:ch01_array/solution027.go][移除元素]]
+  - [ ] [[https://leetcode-cn.com/problems/next-permutation/][LC031]] [[file:ch01_array/solution031.go][下一个排列]] 固定算法，两遍扫描后翻转
+  - [ ] [[https://leetcode-cn.com/problems/permutation-sequence/][LC060]] [[file:ch01_array/solution060.go][排列顺序]]
+  - [ ] [[https://leetcode-cn.com/problems/valid-sudoku/][LC036]] [[file:ch01_array/solution036.go][有效的数独]]
+  - [ ] [[https://leetcode-cn.com/problems/trapping-rain-water/][LC042]] [[file:ch01_array/solution042.go][接雨水]]
+  - [ ] [[https://leetcode-cn.com/problems/spiral-matrix/][LC054]] [[file:ch01_array/solution054.go][螺旋矩阵]]
+  - [ ] [[https://leetcode-cn.com/problems/rotate-image/][LC048]] [[file:ch01_array/solution048.go][旋转图像]]
+  - [ ] [[https://leetcode-cn.com/problems/plus-one/][LC066]] [[file:ch01_array/solution066.go][加一]]
+  - [ ] [[https://leetcode-cn.com/problems/climbing-stairs/][LC070]] [[file:ch01_array/solution070.go][爬楼梯]]
+  - [ ] [[https://leetcode-cn.com/problems/gray-code/][LC089]] [[file:ch01_array/solution089.go][格雷编码]]
+  - [ ] [[https://leetcode-cn.com/problems/set-matrix-zeroes/][LC073]] [[file:ch01_array/solution073.go][矩阵置零]]
+  - [ ] [[https://leetcode-cn.com/problems/gas-station/][LC134]] [[file:ch01_array/solution134.go][加油站]]
+  - [ ] [[https://leetcode-cn.com/problems/candy/][LC135]] [[file:ch01_array/solution135.go][分发糖果]]
+  - [ ] [[https://leetcode-cn.com/problems/single-number/][LC136]] [[file:ch01_array/solution136.go][只出现一次的数字]]
+  - [ ] [[https://leetcode-cn.com/problems/single-number-ii/][LC137]] [[file:ch01_array/solution137.go][只出现一次的数字 II]]
+
+* 链表 List
+  - [X] [[https://leetcode-cn.com/problems/add-two-numbers/][LC002]] [[file:ch02_list/solution002.go][两数相加]]
+  - [ ] [[https://leetcode-cn.com/problems/reverse-linked-list-ii/][LC092]] [[file:ch02_list/solution092.go][反转链表 II]]
+  - [ ] [[https://leetcode-cn.com/problems/partition-list/][LC086]] [[file:ch02_list/solution086.go][分隔链表]]
+  - [ ] [[https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/][LC083]] [[file:ch02_list/solution083.go][删除排序链表中的重复元素]]
+  - [ ] [[https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list-ii/][LC082]] [[file:ch02_list/solution082.go][删除排序链表中的重复元素 II]]
+  - [ ] [[https://leetcode-cn.com/problems/rotate-list/][LC061]] [[file:ch02_list/solution061.go][旋转链表]]
+  - [ ] [[https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/][LC019]] [[file:ch02_list/solution019.go][删除链表的倒数第 N 个结点]]
+  - [ ] [[https://leetcode-cn.com/problems/swap-nodes-in-pairs/][LC024]] [[file:ch02_list/solution024.go][两两交换链表中的节点]]
+  - [ ] [[https://leetcode-cn.com/problems/reverse-nodes-in-k-group/][LC025]] [[file:ch02_list/solution025.go][K 个一组翻转链表]]
+  - [ ] [[https://leetcode-cn.com/problems/copy-list-with-random-pointer/][LC138]] [[file:ch02_list/solution138.go][复制带随机指针的链表]]
+  - [ ] [[https://leetcode-cn.com/problems/linked-list-cycle/][LC141]] [[file:ch02_list/solution141.go][环形链表]]
+  - [ ] [[https://leetcode-cn.com/problems/linked-list-cycle-ii/][LC142]] [[file:ch02_list/solution142.go][环形链表 II]]
+  - [ ] [[https://leetcode-cn.com/problems/reorder-list/][LC143]] [[file:ch02_list/solution143.go][重排链表]]
+  - [ ] [[https://leetcode-cn.com/problems/lru-cache/][LC146]] [[file:ch02_list/solution146.go][LRU 缓存机制]]
+
+* 字符串 String
+  - [X] [[https://leetcode-cn.com/problems/valid-palindrome/][LC125]] [[file:ch03_string/solution125.go][验证回文串]]
+  - [ ] [[https://leetcode-cn.com/problems/implement-strstr/][LC028]] [[file:ch03_string/solution028.go][实现 strStr]]
+  - [ ] [[https://leetcode-cn.com/problems/string-to-integer-atoi/][LC008]] [[file:ch03_string/solution008.go][字符串转换整数 (atoi)]]
+  - [ ] [[https://leetcode-cn.com/problems/valid-number/][LC065]] [[file:ch03_string/solution065.go][有效数字]]
+  - [ ] [[https://leetcode-cn.com/problems/add-binary/][LC067]] [[file:ch03_string/solution067.go][二进制求和]]
+  - [ ] [[https://leetcode-cn.com/problems/longest-palindromic-substring/][LC005]] [[file:ch03_string/solution005.go][最长回文子串]]
+  - [ ] [[https://leetcode-cn.com/problems/longest-common-prefix/][LC014]] [[file:ch03_string/solution014.go][最长公共前缀]]
+  - [ ] [[https://leetcode-cn.com/problems/regular-expression-matching/][LC010]] [[file:ch03_string/solution010.go][正则表达式匹配]]
+  - [ ] [[https://leetcode-cn.com/problems/wildcard-matching/][LC044]] [[file:ch03_string/solution044.go][通配符匹配]]
+  - [ ] [[https://leetcode-cn.com/problems/group-anagrams/][LC049]] [[file:ch03_string/solution049.go][字母异位词分组]]
+  - [ ] [[https://leetcode-cn.com/problems/integer-to-roman/][LC012]] [[file:ch03_string/solution012.go][整数转罗马数字]]
+  - [ ] [[https://leetcode-cn.com/problems/roman-to-integer/][LC013]] [[file:ch03_string/solution013.go][罗马数字转整数]]
+  - [ ] [[https://leetcode-cn.com/problems/count-and-say/][LC038]] [[file:ch03_string/solution038.go][外观数列]]
+  - [ ] [[https://leetcode-cn.com/problems/valid-anagram/][LC242]] [[file:ch03_string/solution242.go][有效的字母异位词]]
+  - [ ] [[https://leetcode-cn.com/problems/simplify-path/][LC071]] [[file:ch03_string/solution071.go][简化路径]]
+  - [ ] [[https://leetcode-cn.com/problems/length-of-last-word/][LC058]] [[file:ch03_string/solution058.go][最后一个单词的长度]]
+
+* 栈和队列 Stack & Heap
+  - [ ] [[https://leetcode-cn.com/problems/valid-parentheses/][LC020]] [[file:ch04_stack_heap/solution020.go][有效的括号]]
+  - [ ] [[https://leetcode-cn.com/problems/longest-valid-parentheses/][LC032]] [[file:ch04_stack_heap/solution032.go][最长有效括号]]
+  - [ ] [[https://leetcode-cn.com/problems/largest-rectangle-in-histogram/][LC084]] [[file:ch04_stack_heap/solution084.go][柱状图中最大的矩形]]
+  - [ ] [[https://leetcode-cn.com/problems/evaluate-reverse-polish-notation/][LC150]] [[file:ch04_stack_heap/solution150.go][逆波兰表达式求值]]
+
+* 树 Tree
+  - [X] [[https://leetcode-cn.com/problems/binary-tree-preorder-traversal/][LC144]] [[file:ch05_tree/solution144.go][二叉树的前序遍历]]
+  - [ ] [[https://leetcode-cn.com/problems/binary-tree-inorder-traversal/][LC094]] [[file:ch05_tree/solution094.go][二叉树的中序遍历]]
+  - [ ] [[https://leetcode-cn.com/problems/binary-tree-postorder-traversal/][LC145]] [[file:ch05_tree/solution145.go][二叉树的后序遍历]]
+  - [ ] [[https://leetcode-cn.com/problems/binary-tree-level-order-traversal/][LC102]] [[file:ch05_tree/solution102.go][二叉树的层序遍历]]
+  - [ ] [[https://leetcode-cn.com/problems/binary-tree-level-order-traversal-ii/][LC107]] [[file:ch05_tree/solution107.go][二叉树的层序遍历 II]]
+  - [ ] [[https://leetcode-cn.com/problems/binary-tree-zigzag-level-order-traversal/][LC103]] [[file:ch05_tree/solution103.go][二叉树的锯齿形层序遍历]]
+  - [ ] [[https://leetcode-cn.com/problems/recover-binary-search-tree/][LC099]] [[file:ch05_tree/solution099.go][恢复二叉搜索树]]
+  - [ ] [[https://leetcode-cn.com/problems/same-tree/][LC100]] [[file:ch05_tree/solution100.go][相同的树]]
+  - [ ] [[https://leetcode-cn.com/problems/symmetric-tree/][LC101]] [[file:ch05_tree/solution101.go][对称二叉树]]
+  - [ ] [[https://leetcode-cn.com/problems/balanced-binary-tree/][LC110]] [[file:ch05_tree/solution110.go][平衡二叉树]]
+  - [ ] [[https://leetcode-cn.com/problems/flatten-binary-tree-to-linked-list/][LC114]] [[file:ch05_tree/solution114.go][二叉树展开为链表]]
+  - [ ] [[https://leetcode-cn.com/problems/populating-next-right-pointers-in-each-node/][LC116]] [[file:ch05_tree/solution116.go][填充每个节点的下一个右侧节点指针]]
+  - [ ] [[https://leetcode-cn.com/problems/populating-next-right-pointers-in-each-node-ii/][LC117]] [[file:ch05_tree/solution117.go][填充每个节点的下一个右侧节点指针 II]]
+  - [ ] [[https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/][LC105]] [[file:ch05_tree/solution105.go][从前序与中序遍历序列构造二叉树]]
+  - [ ] [[https://leetcode-cn.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/][LC106]] [[file:ch05_tree/solution106.go][从中序与后序遍历序列构造二叉树]]
+  - [ ] [[https://leetcode-cn.com/problems/unique-binary-search-trees/][LC096]] [[file:ch05_tree/solution096.go][不同的二叉搜索树]]
+  - [ ] [[https://leetcode-cn.com/problems/unique-binary-search-trees-ii/][LC095]] [[file:ch05_tree/solution095.go][不同的二叉搜索树 II]]
+  - [ ] [[https://leetcode-cn.com/problems/validate-binary-search-tree/][LC098]] [[file:ch05_tree/solution098.go][验证二叉搜索树]]
+  - [ ] [[https://leetcode-cn.com/problems/convert-sorted-array-to-binary-search-tree/][LC108]] [[file:ch05_tree/solution108.go][将有序数组转换为二叉搜索树]]
+  - [ ] [[https://leetcode-cn.com/problems/convert-sorted-list-to-binary-search-tree/][LC109]] [[file:ch05_tree/solution109.go][有序链表转换二叉搜索树]]
+  - [ ] [[https://leetcode-cn.com/problems/minimum-depth-of-binary-tree/][LC111]] [[file:ch05_tree/solution111.go][二叉树的最小深度]]
+  - [ ] [[https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/][LC104]] [[file:ch05_tree/solution104.go][二叉树的最大深度]]
+  - [ ] [[https://leetcode-cn.com/problems/path-sum/][LC112]] [[file:ch05_tree/solution112.go][路径总和]]
+  - [ ] [[https://leetcode-cn.com/problems/path-sum-ii/][LC113]] [[file:ch05_tree/solution113.go][路径总和 II]]
+  - [ ] [[https://leetcode-cn.com/problems/binary-tree-maximum-path-sum/][LC124]] [[file:ch05_tree/solution124.go][二叉树中的最大路径和]]
+  - [ ] [[https://leetcode-cn.com/problems/sum-root-to-leaf-numbers/][LC129]] [[file:ch05_tree/solution129.go][求根节点到叶节点数字之和]]
+  - [ ] [[https://leetcode-cn.com/problems/invert-binary-tree/][LC226]] [[file:ch05_tree/solution226.go][翻转二叉树]]
+
+* 图 Graph
+  - [ ] [[https://leetcode-cn.com/problems/clone-graph/][LC133]] [[file:ch06_graph/solution695.go][克隆图]]
+  - [ ] [[https://leetcode-cn.com/problems/max-area-of-island/][LC695]] [[file:ch06_graph/solution695.go][岛屿的最大面积]]
+  - [ ] [[https://leetcode-cn.com/problems/n-queens/][LC051]] [[file:ch06_graph/solution051.go][N 皇后]]
+  - [ ] [[https://leetcode-cn.com/problems/n-queens-ii/][LC052]] [[file:ch06_graph/solution052.go][N 皇后 II]]
+
+* 贪心法 Greedy Algorithm
+  - [ ] [[https://leetcode-cn.com/problems/jump-game/][LC055]] [[file:ch07_greedy/solution055.go][跳跃游戏]]
+  - [ ] [[https://leetcode-cn.com/problems/jump-game-ii/][LC045]] [[file:ch07_greedy/solution045.go][跳跃游戏 II]]
+  - [ ] [[https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/][LC121]] [[file:ch07_greedy/solution121.go][买卖股票的最佳时机]]
+  - [ ] [[https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/][LC122]] [[file:ch07_greedy/solution122.go][买卖股票的最佳时机 II]]
+  - [ ] [[https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/][LC003]] [[file:ch07_greedy/solution003.go][无重复字符的最长子串]]
+  - [ ] [[https://leetcode-cn.com/problems/container-with-most-water/][LC011]] [[file:ch07_greedy/solution011.go][盛最多水的容器]]
+
+* 动态规划 Dynamic Programming
+  - [ ] [[https://leetcode-cn.com/problems/edit-distance/][LC072]] [[file:ch08_dp/solution072.go][编辑距离]]
+  - [ ] [[https://leetcode-cn.com/problems/longest-increasing-subsequence/][LC300]] [[file:ch08_dp/solution300.go][最长递增子序列]]
+  - [ ] [[https://leetcode-cn.com/problems/triangle/][LC120]] [[file:ch08_dp/solution120.go][三角形最小路径和]]
+  - [ ] [[https://leetcode-cn.com/problems/maximum-subarray/][LC053]] [[file:ch08_dp/solution053.go][最大子序和]]
+  - [ ] [[https://leetcode-cn.com/problems/palindrome-partitioning-ii/][LC132]] [[file:ch08_dp/solution132.go][分割回文串 II]]
+  - [ ] [[https://leetcode-cn.com/problems/maximal-rectangle/][LC085]] [[file:ch08_dp/solution085.go][最大矩形]]
+  - [ ] [[https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iii/][LC123]] [[file:ch08_dp/solution123.go][买卖股票的最佳时机 III]]
+  - [ ] [[https://leetcode-cn.com/problems/interleaving-string/][LC097]] [[file:ch08_dp/solution097.go][交错字符串]]
+  - [ ] [[https://leetcode-cn.com/problems/scramble-string/][LC087]] [[file:ch08_dp/solution087.go][扰乱字符串]]
+  - [ ] [[https://leetcode-cn.com/problems/minimum-path-sum/][LC064]] [[file:ch08_dp/solution064.go][最小路径和]]
+  - [ ] [[https://leetcode-cn.com/problems/distinct-subsequences/][LC115]] [[file:ch08_dp/solution115.go][不同的子序列]]
+  - [ ] [[https://leetcode-cn.com/problems/word-break/][LC139]] [[file:ch08_dp/solution139.go][单词拆分]]
+  - [ ] [[https://leetcode-cn.com/problems/word-break-ii/][LC140]] [[file:ch08_dp/solution140.go][单词拆分 II]]
+  - [ ] [[https://leetcode-cn.com/problems/average-waiting-time/][LC1701]] 平均等待时间
+
+* 排序和查找 Sorting & Searching
+  - [ ] [[https://leetcode-cn.com/problems/merge-sorted-array/][LC088]] [[file:ch09_sort_search/solution088.go][合并两个有序数组]]
+  - [ ] [[https://leetcode-cn.com/problems/merge-two-sorted-lists/][LC021]] [[file:ch09_sort_search/solution021.go][合并两个有序链表]]
+  - [ ] [[https://leetcode-cn.com/problems/merge-k-sorted-lists/][LC023]] [[file:ch09_sort_search/solution023.go][合并 K 个升序链表]]
+  - [ ] [[https://leetcode-cn.com/problems/insertion-sort-list/][LC147]] [[file:ch09_sort_search/solution147.go][对链表进行插入排序]]
+  - [ ] [[https://leetcode-cn.com/problems/sort-list/][LC148]] [[file:ch09_sort_search/solution148.go][排序链表]] 采用归并排序
+  - [ ] [[https://leetcode-cn.com/problems/first-missing-positive/][LC041]] [[file:ch09_sort_search/solution041.go][缺失的第一个正数]]
+  - [ ] [[https://leetcode-cn.com/problems/sort-colors/][LC075]] [[file:ch09_sort_search/solution075.go][颜色分类]] (荷兰旗)
+  - [ ] [[https://leetcode-cn.com/problems/search-insert-position/][LC035]] [[file:ch09_sort_search/solution035.go][搜索插入位置]] 二分查找
+  - [ ] [[https://leetcode-cn.com/problems/range-module/][LC715]] [[file:ch09_sort_search/solution715.go][Range 模块]] 使用 TreeSet 维护不相交的有序区间
+  - [ ] [[https://leetcode-cn.com/problems/reconstruct-a-2-row-binary-matrix/][LC1253]] [[file:ch09_sort_search/solution1253.go][重构 2 行二进制矩阵]] 贪心+模拟
+
+* 回溯 BackTrack
+  - [ ] [[https://leetcode-cn.com/problems/subsets/][LC078]] [[file:ch10_backtrack/solution078.go][子集]]
+  - [ ] [[https://leetcode-cn.com/problems/subsets-ii/][LC090]] [[file:ch10_backtrack/solution090.go][子集 II]]
+  - [ ] [[https://leetcode-cn.com/problems/permutations/][LC046]] [[file:ch10_backtrack/solution046.go][全排列]]
+  - [ ] [[https://leetcode-cn.com/problems/permutations-ii/][LC047]] [[file:ch10_backtrack/solution047.go][全排列 II]]
+  - [ ] [[https://leetcode-cn.com/problems/combinations/][LC077]] [[file:ch10_backtrack/solution077.go][组合]]
+  - [ ] [[https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/][LC017]] [[file:ch10_backtrack/solution017.go][电话号码的字母组合]]
+
+* 广搜和深搜 BFS & DFS
+  - [ ] [[https://leetcode-cn.com/problems/word-ladder/][LC127]] [[file:ch11_bfs_dfs/solution127.go][单词接龙]]
+  - [ ] [[https://leetcode-cn.com/problems/word-ladder-ii/][LC126]] [[file:ch11_bfs_dfs/solution126.go][单词接龙 II]]
+  - [ ] [[https://leetcode-cn.com/problems/surrounded-regions/][LC130]] [[file:ch11_bfs_dfs/solution130.go][被围绕的区域]] 从边缘深搜, 标记好再重置
+  - [ ] [[https://leetcode-cn.com/problems/palindrome-partitioning/][LC131]] [[file:ch11_bfs_dfs/solution131.go][分割回文串]] 先动规求字串是否为回文串, 然后使用深搜构造所有解
+  - [ ] [[https://leetcode-cn.com/problems/unique-paths/][LC062]] [[file:ch11_bfs_dfs/solution062.go][不同路径]] 动规法解, 可以考虑使用滚动数组优化
+  - [ ] [[https://leetcode-cn.com/problems/unique-paths-ii/][LC063]] [[file:ch11_bfs_dfs/solution063.go][不同路径 II]] 与上一题类似, 需要对障碍物特殊考虑
+  - [ ] [[https://leetcode-cn.com/problems/restore-ip-addresses/][LC093]] [[file:ch11_bfs_dfs/solution093.go][复原 IP 地址]]
+  - [ ] [[https://leetcode-cn.com/problems/combination-sum/][LC039]] [[file:ch11_bfs_dfs/solution039.go][组合总和]] 可以重复选, dfs 在取下一个时使用 ~dfs(i, target-a[i])~
+  - [ ] [[https://leetcode-cn.com/problems/combination-sum-ii/][LC040]] [[file:ch11_bfs_dfs/solution040.go][组合总和 II]] 添加统计 ~List<int[]> numCount~ 来去重
+  - [ ] [[https://leetcode-cn.com/problems/generate-parentheses/][LC022]] [[file:ch11_bfs_dfs/solution022.go][括号生成]] 对开括号和闭括号进行深搜 ~dfs(int open, int close)~
+  - [ ] [[https://leetcode-cn.com/problems/sudoku-solver/][LC037]] [[file:ch11_bfs_dfs/solution037.go][解数独]]
+  - [ ] [[https://leetcode-cn.com/problems/word-search/][LC079]] [[file:ch11_bfs_dfs/solution079.go][单词搜索]]
+
+* 分治 Divide and Conquer
+  - [ ] [[https://leetcode-cn.com/problems/powx-n/][LC050]] [[file:ch12_dnc/solution050.go][Pow(x, n)]]
+  - [ ] [[https://leetcode-cn.com/problems/sqrtx/][LC069]] [[file:ch12_dnc/solution069.go][x 的平方根]]
+  - [ ] [[https://leetcode-cn.com/problems/majority-element/][LC169]] [[file:ch12_dnc/solution169.go][多数元素]]
+
+* 细节题 Misc
+  - [ ] [[https://leetcode-cn.com/problems/reverse-integer/][LC007]] [[file:ch13_misc/solution007.go][整数反转]]
+  - [ ] [[https://leetcode-cn.com/problems/palindrome-number/][LC009]] [[file:ch13_misc/solution009.go][回文数]]
+  - [ ] [[https://leetcode-cn.com/problems/insert-interval/][LC057]] [[file:ch13_misc/solution057.go][插入区间]]
+  - [ ] [[https://leetcode-cn.com/problems/merge-intervals/][LC056]] [[file:ch13_misc/solution056.go][合并区间]]
+  - [ ] [[https://leetcode-cn.com/problems/minimum-window-substring/][LC076]] [[file:ch13_misc/solution076.go][最小覆盖子串]] 滑动窗口法，维护 t 和 s 串的距离 ~distST~ 来判断是否覆盖
+  - [ ] [[https://leetcode-cn.com/problems/divide-two-integers/][LC029]] [[file:ch13_misc/solution029.go][两数相除]]
+  - [ ] [[https://leetcode-cn.com/problems/multiply-strings/][LC043]] [[file:ch13_misc/solution043.go][字符串相乘]]
+  - [ ] [[https://leetcode-cn.com/problems/substring-with-concatenation-of-all-words/][LC030]] [[file:ch13_misc/solution030.go][串联所有单词的子串]]
+  - [ ] [[https://leetcode-cn.com/problems/pascals-triangle-ii/][LC119]] [[file:ch13_misc/solution119.go][杨辉三角 II]]
+  - [ ] [[https://leetcode-cn.com/problems/spiral-matrix/][LC054]] [[file:ch13_misc/solution054.go][螺旋矩阵]]
+  - [ ] [[https://leetcode-cn.com/problems/spiral-matrix-ii/][LC059]] [[file:ch13_misc/solution059.go][螺旋矩阵 II]]
+  - [ ] [[https://leetcode-cn.com/problems/zigzag-conversion/][LC006]] [[file:ch13_misc/solution006.go][Z 字形变换]]
+  - [ ] [[https://leetcode-cn.com/problems/text-justification/][LC068]] [[file:ch13_misc/solution068.go][文本左右对齐]]
+  - [ ] [[https://leetcode-cn.com/problems/max-points-on-a-line/][LC149]] [[file:ch13_misc/solution149.go][直线上最多的点数]]
+  - [ ] [[https://leetcode-cn.com/problems/he-wei-sde-liang-ge-shu-zi-lcof/][OF057]] [[file:ch13_misc/solutionOF057.go][和为 s 的两个数字]]

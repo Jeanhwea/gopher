@@ -1,0 +1,24 @@
+#+TITLE: A Collection for Golang
+#+AUTHOR: Jinghui Hu
+#+EMAIL: hujinghui@buaa.edu.cn
+#+DATE: <2021-09-16 Thu 15:39:31>
+
+
+** 安装和配置 Golang
+   #+BEGIN_SRC sh
+     # 安装 golang
+     brew install golang
+
+     # 配置七牛云镜像
+
+     # old version
+     export GO111MODULE=on
+     export GOPROXY=https://goproxy.cn
+
+     # version > 1.14
+     go env -w GO111MODULE=on
+     go env -w GOPROXY=https://goproxy.cn,direct
+   #+END_SRC
+
+** 一些参考连接
+   1. [[https://github.com/senghoo/golang-design-pattern][golang-design-pattern]] 《研磨设计模式》
