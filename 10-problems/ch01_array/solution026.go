@@ -1,6 +1,6 @@
 package main
 
-import "fmt"
+import ("fmt")
 
 func removeDuplicates(nums []int) int {
 	k := -1
