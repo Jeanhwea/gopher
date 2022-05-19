@@ -13,7 +13,6 @@ type API interface {
 }
 
 // API 为 facade 模块的外观接口，大部分代码使用此接口简化对 facade 类的访问
-
 func NewAPI() API {
 	return &apiImpl{a: NewAModuleAPI(), b: NewBModuleAPI()}
 }
