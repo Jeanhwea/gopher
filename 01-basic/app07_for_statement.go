@@ -1,12 +1,14 @@
 package main
 
-import ("fmt")
+import (
+	"fmt"
+)
 
 // golang 中只有 for 循环, 没有 while, loop 等其它循环类型
+
 func testFor() {
 	for i := 1; i < 10; i++ {
 	}
-
 	var i int
 	for i < 10 { // 类似 while 循环
 	}
@@ -17,6 +19,7 @@ func testFor() {
 }
 
 // 带标签的 for 循环
+
 func testFor2() {
 here:
 	for i := 0; i < 2; i++ {
@@ -30,7 +33,6 @@ here:
 			}
 		}
 	}
-
 there:
 	for i := 0; i < 2; i++ {
 		for j := i + 1; j < 3; j++ {

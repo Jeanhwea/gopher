@@ -1,6 +1,8 @@
 package main
 
-import ("fmt")
+import (
+	"fmt"
+)
 
 func search(nums []int, target int) bool {
 	beg, end := 0, len(nums)-1

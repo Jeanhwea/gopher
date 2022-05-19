@@ -1,6 +1,8 @@
 package pkg01
 
-import ("fmt")
+import (
+	"fmt"
+)
 
 const (
 	PackageName = "pkg01"

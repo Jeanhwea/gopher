@@ -1,6 +1,8 @@
 package main
 
-import ("fmt")
+import (
+	"fmt"
+)
 
 func findElement(num int, nums ...int) {
 	found := false

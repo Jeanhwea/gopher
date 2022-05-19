@@ -3,7 +3,9 @@
 ////////////////////////////////////////////////////////////////////////////////
 package main
 
-import ("fmt")
+import (
+	"fmt"
+)
 
 // 外观的接口
 type API interface {
@@ -11,6 +13,7 @@ type API interface {
 }
 
 // API 为 facade 模块的外观接口，大部分代码使用此接口简化对 facade 类的访问
+
 func NewAPI() API {
 	return &apiImpl{a: NewAModuleAPI(), b: NewBModuleAPI()}
 }
@@ -32,7 +35,6 @@ func (this *apiImpl) Test() string {
 type AModuleAPI interface {
 	TestA() string
 }
-
 type aModuleImpl struct{}
 
 func (*aModuleImpl) TestA() string {
@@ -48,7 +50,6 @@ func NewAModuleAPI() AModuleAPI {
 type BModuleAPI interface {
 	TestB() string
 }
-
 type bModuleImpl struct{}
 
 func (*bModuleImpl) TestB() string {
@@ -62,7 +63,6 @@ func NewBModuleAPI() BModuleAPI {
 func main() {
 	// API 在使用是只需要创建
 	api := NewAPI()
-
 	// 不需要关心 A Module 和 B Module 的实现细节
 	ret := api.Test()
 	fmt.Println(ret)

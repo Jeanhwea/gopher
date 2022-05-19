@@ -1,13 +1,14 @@
 package main
 
-import ("fmt")
+import (
+	"fmt"
+)
 
 ////////////////////////////////////////////////////////////////////////////////
 // value receiver method 和 pointer receiver method 的调用区别
 type Describer interface {
 	Describe()
 }
-
 type Person struct {
 	name string
 	age  int
@@ -35,16 +36,13 @@ func test01() {
 	p2 := Person{"Jack", 22}
 	d1 = &p2
 	d1.Describe()
-
 	////////////////////////////////////////////////////////////////////////////////
 	// Pointer receiver 仅仅支持指针调用方式
 	var d2 Describer
 	a := Address{"Washington", "USA"}
-
 	// d2 = a
 	// 如果使用上述赋值，编译会报错
 	// cannot use a (type Address) as type Describer in assignment
-
 	d2 = &a // 使用地址传值则是正确的
 	d2.Describe()
 }
@@ -54,11 +52,9 @@ func test01() {
 type SalaryCalculator interface {
 	DisplaySalary()
 }
-
 type LeaveCalculator interface {
 	CalculateLeavesLeft() int
 }
-
 type Employee struct {
 	name        string
 	basicPay    int
@@ -83,7 +79,6 @@ func test02() {
 		totalLeaves: 30,
 		leavesTaken: 5,
 	}
-
 	var sc SalaryCalculator = emp1
 	var lc LeaveCalculator = emp1
 	sc.DisplaySalary()
@@ -105,7 +100,6 @@ func test03() {
 		totalLeaves: 32,
 		leavesTaken: 8,
 	}
-
 	var empOp EmployeeOperation = emp2
 	empOp.DisplaySalary()
 	fmt.Println("Leaves left =", empOp.CalculateLeavesLeft())

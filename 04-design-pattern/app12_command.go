@@ -3,7 +3,9 @@
 ////////////////////////////////////////////////////////////////////////////////
 package main
 
-import ("fmt")
+import (
+	"fmt"
+)
 
 // 命令模式本质是把某个对象的方法调用封装到对象中，方便传递、存储、调用
 type Command interface {
@@ -11,7 +13,6 @@ type Command interface {
 }
 
 ////////////////////////////////////////////////////////////////////////////////
-
 // 定义开机命令
 type StartCommand struct {
 	mb *MotherBoard
@@ -73,11 +74,9 @@ func main() {
 	motherBoard := &MotherBoard{}
 	btn1 := NewStartCommand(motherBoard)
 	btn2 := NewRebootCommand(motherBoard)
-
 	box1 := NewBox(btn1, btn2)
 	box1.PressButton1()
 	box1.PressButton2()
-
 	// 配置灵活
 	box2 := NewBox(btn2, btn1)
 	box2.PressButton1()

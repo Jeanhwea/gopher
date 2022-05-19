@@ -3,7 +3,9 @@
 ////////////////////////////////////////////////////////////////////////////////
 package main
 
-import ("fmt")
+import (
+	"fmt"
+)
 
 // Cloneable 是原型对象需要实现的接口
 type Cloneable interface {
@@ -48,11 +50,9 @@ func main() {
 	var manager *PrototypeManager = NewPrototypeManager()
 	manager.Set("t1", &Type1{name: "Type1"})
 	manager.Set("t2", &Type1{name: "Type2"})
-
 	t1 := manager.Get("t1")
 	t2 := t1.Clone()
 	fmt.Println(t1 == t2) // => true
-
 	t3 := t2.(*Type1)
 	fmt.Println(t3.name) // => Type1
 }

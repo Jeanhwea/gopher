@@ -1,6 +1,8 @@
 package main
 
-import ("fmt")
+import (
+	"fmt"
+)
 
 ////////////////////////////////////////////////////////////////////////////////
 // 结构体定义
@@ -20,7 +22,6 @@ func test01() {
 	}
 	fmt.Println(emp1)
 	fmt.Println(emp2)
-
 	// 匿名结构体
 	emp3 := struct {
 		name string
@@ -30,11 +31,9 @@ func test01() {
 		age:  34,
 	}
 	fmt.Println(emp3)
-
 	// 空结构体
 	var emp4 Employee
 	fmt.Println(emp4)
-
 	pEmp := &emp1
 	fmt.Println(pEmp)
 	(*pEmp).age = 99
@@ -64,7 +63,6 @@ type Address struct {
 	city  string
 	state string
 }
-
 type Person struct {
 	name string
 	addr Address
@@ -127,7 +125,6 @@ func test05() {
 	// 如果结构体每个域都可以比较，则等值比较会逐个比较
 	fmt.Println(name1 == name2) // => true
 	fmt.Println(name1 == name3) // => false
-
 	// 如果结构体中包含 slice 或 map 则无法比较
 }
 

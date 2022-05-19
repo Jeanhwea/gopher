@@ -23,7 +23,7 @@ func logValue() {
 		name: "王新刚",
 	}
 
-	fmt.Printf("%%v = %v\n", stu) // 只打印值
+	fmt.Printf("%%v = %v\n", stu)   // 只打印值
 	fmt.Printf("%%+v = %+v\n", stu) // 打印键和值
 	fmt.Printf("%%#v = %#v\n", stu) // 打印结构体名称，键和值
 

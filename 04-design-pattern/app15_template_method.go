@@ -3,17 +3,17 @@
 ////////////////////////////////////////////////////////////////////////////////
 package main
 
-import ("fmt")
+import (
+	"fmt"
+)
 
 type Downloader interface {
 	Download(uri string)
 }
-
 type template struct {
 	implement
 	uri string
 }
-
 type implement interface {
 	download()
 	save()
@@ -75,7 +75,6 @@ func main() {
 	var downloader Downloader
 	downloader = NewHttpDownloader()
 	downloader.Download("http://example.com/abc.zip")
-
 	downloader = NewFtpDownloader()
 	downloader.Download("ftp://example.com/abc.zip")
 }

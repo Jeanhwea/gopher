@@ -3,7 +3,9 @@
 ////////////////////////////////////////////////////////////////////////////////
 package main
 
-import ("fmt")
+import (
+	"fmt"
+)
 
 // 享元模式从对象中剥离出不发生改变且多个实例需要的重复数据，独立出一个享元
 // 使多个对象共享，从而节省内存以及减少对象数量
@@ -29,7 +31,6 @@ func (this *ImageFlyweightFactory) Get(filename string) *ImageFlyweight {
 		image = NewImageFlyweight(filename)
 		this.maps[filename] = image
 	}
-
 	return image
 }
 

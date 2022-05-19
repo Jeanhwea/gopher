@@ -12,6 +12,7 @@ func init() {
 
 ////////////////////////////////////////////////////////////////////////////////
 // WaitGroup
+
 func test01() {
 	process := func(rid int, wg *sync.WaitGroup) {
 		log.Printf("Start Goroutine(#%d).\n", rid)

@@ -3,7 +3,9 @@
 ////////////////////////////////////////////////////////////////////////////////
 package main
 
-import ("fmt")
+import (
+	"fmt"
+)
 
 type Aggregate interface {
 	Iterator() Iterator

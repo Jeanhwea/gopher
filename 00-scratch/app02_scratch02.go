@@ -1,6 +1,8 @@
 package main
 
-import ("fmt")
+import (
+	"fmt"
+)
 
 func test01() {
 	var g = func() { fmt.Println("g1") }

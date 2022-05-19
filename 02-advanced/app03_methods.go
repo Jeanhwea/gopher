@@ -1,6 +1,8 @@
 package main
 
-import ("fmt")
+import (
+	"fmt"
+)
 
 ////////////////////////////////////////////////////////////////////////////////
 // 方法定义
@@ -11,16 +13,19 @@ type Employee struct {
 }
 
 // 定义方法, value receiver, 对 e 的修改不影响原始对象, 每次复制值会有性能问题
+
 func (e Employee) displaySalary() {
 	fmt.Printf("%s's Salary is %s%d\n", e.name, e.currency, e.salary)
 }
 
 // 定义方法, pointer receiver, 对 e 的修改影响原始对象
+
 func (e *Employee) displaySalary2() {
 	fmt.Printf("%s's Salary is %s%d\n", e.name, e.currency, e.salary)
 }
 
 // 定义函数, 普通函数没有 receiver, 需要显式传递参数
+
 func displaySalaryFunc(e Employee) {
 	fmt.Printf("%s's Salary is %s%d\n", e.name, e.currency, e.salary)
 }

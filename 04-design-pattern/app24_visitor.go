@@ -6,16 +6,16 @@ package main
 // 访问者模式可以给一系列对象透明的添加功能，并且把相关代码封装到一个类中。
 // 对象只要预留访问者接口 Accept 则后期为对象添加功能的时候就不需要改动对象。
 
-import ("fmt")
+import (
+	"fmt"
+)
 
 type Customer interface {
 	Accept(Visitor)
 }
-
 type Visitor interface {
 	Visit(Customer)
 }
-
 type EnterpriseCustomer struct {
 	name string
 }
@@ -86,7 +86,6 @@ func main() {
 	c1.Add(NewEnterpriseCustomer("B company"))
 	c1.Add(NewIndividualCustomer("bob"))
 	c1.Accept(&ServiceRequestVisitor{})
-
 	c2 := &CustomerCol{}
 	c2.Add(NewEnterpriseCustomer("A company"))
 	c2.Add(NewIndividualCustomer("bob"))

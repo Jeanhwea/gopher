@@ -13,13 +13,14 @@ package main
 //
 // 同时可在职责链类中实现职责接口相关函数，使职责链对象可以当做一般职责对象是用。
 
-import ("fmt")
+import (
+	"fmt"
+)
 
 type Manager interface {
 	HaveRight(money int) bool
 	HandleFeeRequest(name string, money int) bool
 }
-
 type RequestChain struct {
 	Manager
 	successor *RequestChain
@@ -110,12 +111,9 @@ func main() {
 	c1 := NewProjectManagerChain()
 	c2 := NewDepManagerChain()
 	c3 := NewGeneralManagerChain()
-
 	c1.SetSuccessor(c2)
 	c2.SetSuccessor(c3)
-
 	var c Manager = c1
-
 	c.HandleFeeRequest("bob", 400)
 	c.HandleFeeRequest("tom", 1400)
 	c.HandleFeeRequest("ada", 10000)

@@ -9,6 +9,7 @@ var cond = sync.NewCond(new(sync.Mutex))
 var count = 0 // 计算器
 
 // 生产者
+
 func consumer() {
 	for {
 		cond.L.Lock()
@@ -23,6 +24,7 @@ func consumer() {
 }
 
 // 消费者
+
 func producer() {
 	for {
 		cond.L.Lock()

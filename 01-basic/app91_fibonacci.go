@@ -1,6 +1,8 @@
 package main
 
-import ("fmt")
+import (
+	"fmt"
+)
 
 func fib(n int) int {
 	if n <= 1 {
@@ -8,7 +10,6 @@ func fib(n int) int {
 	} else if n <= 2 {
 		return 1
 	}
-
 	var a, b = 1, 0
 	for i := 2; i < n; i++ {
 		a, b = a+b, a

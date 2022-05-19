@@ -3,13 +3,14 @@
 ////////////////////////////////////////////////////////////////////////////////
 package main
 
-import ("fmt")
+import (
+	"fmt"
+)
 
 // 适配器模式用于转换一种接口适配另一种接口, Target 是适配目标, 适配目标的 Request 方法
 type Target interface {
 	Request() string
 }
-
 type Adaptee interface {
 	SpecialRequest() string
 }
@@ -42,6 +43,5 @@ func (this *adaptor) Request() string {
 func main() {
 	adaptee := NewAdaptee()       // 被适配的对象
 	target := NewAdaptor(adaptee) // 适配的目标
-
 	fmt.Println(target.Request()) // 调用目标方法
 }

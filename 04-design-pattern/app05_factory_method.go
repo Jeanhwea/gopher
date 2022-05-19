@@ -3,7 +3,9 @@
 ////////////////////////////////////////////////////////////////////////////////
 package main
 
-import ("fmt")
+import (
+	"fmt"
+)
 
 // 被封装的实际类接口
 type Operator interface {
@@ -25,6 +27,7 @@ type OperatorBase struct {
 func (this *OperatorBase) SetA(a int) {
 	this.a = a
 }
+
 func (this *OperatorBase) SetB(b int) {
 	this.b = b
 }
@@ -67,11 +70,9 @@ func main() {
 	plusOp.SetA(4)
 	plusOp.SetB(1)
 	fmt.Println(plusOp.Result())
-
 	minusFactory := MinusOperatorFactory{}
 	minusOp := minusFactory.Create()
 	minusOp.SetA(4)
 	minusOp.SetB(1)
 	fmt.Println(minusOp.Result())
-
 }

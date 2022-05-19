@@ -1,6 +1,8 @@
 package main
 
-import ("fmt")
+import (
+	"fmt"
+)
 
 // 接口
 type AnimalIF interface {
@@ -52,7 +54,6 @@ func main() {
 	var animal AnimalIF
 	animal = &Cat{"Green"}
 	showAnimal(animal)
-
 	animal = &Dog{"Yellow"}
 	showAnimal(animal)
 }

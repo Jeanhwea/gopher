@@ -3,13 +3,14 @@
 ////////////////////////////////////////////////////////////////////////////////
 package main
 
-import ("fmt")
+import (
+	"fmt"
+)
 
 // 定义存取数据的抽象工厂
 type DataLoaderAbstractFactory interface {
 	CreateLoader() DataLoader
 }
-
 type DataLoader interface {
 	Load()
 }
@@ -42,10 +43,8 @@ func (this *DBFactory) CreateLoader() DataLoader {
 
 func main() {
 	var loaderFactor DataLoaderAbstractFactory
-
 	loaderFactor = &XMLFactory{}
 	loaderFactor.CreateLoader().Load()
-
 	loaderFactor = &DBFactory{}
 	loaderFactor.CreateLoader().Load()
 }

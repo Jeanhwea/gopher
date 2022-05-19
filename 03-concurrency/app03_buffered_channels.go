@@ -11,6 +11,7 @@ func init() {
 }
 
 // 带缓存的管道
+
 func test01() {
 	ch := make(chan string, 2) // 管道容量为 2
 

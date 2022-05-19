@@ -3,7 +3,9 @@
 ////////////////////////////////////////////////////////////////////////////////
 package main
 
-import ("fmt")
+import (
+	"fmt"
+)
 
 type Subject struct {
 	observers []Observer
@@ -32,7 +34,6 @@ func (this *Subject) UpdateContext(context string) {
 type Observer interface {
 	Update(*Subject)
 }
-
 type Reader struct {
 	name string
 }
@@ -53,6 +54,5 @@ func main() {
 	subject.Subscribe(reader1)
 	subject.Subscribe(reader2)
 	subject.Subscribe(reader3)
-
 	subject.UpdateContext("Context[observer mode]")
 }

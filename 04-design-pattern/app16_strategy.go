@@ -3,14 +3,15 @@
 ////////////////////////////////////////////////////////////////////////////////
 package main
 
-import ("fmt")
+import (
+	"fmt"
+)
 
 // 定义现金和银行卡两种支付策略
 type Payment struct {
 	context  *PaymentContext
 	strategy PaymentStrategy
 }
-
 type PaymentContext struct {
 	Name, CardID string
 	Money        int
@@ -46,14 +47,12 @@ type Bank struct{}
 
 func (*Bank) Pay(ctx *PaymentContext) {
 	fmt.Printf("Pay $%d to %s by bank account %s\n", ctx.Money, ctx.Name, ctx.CardID)
-
 }
 
 func main() {
 	var payment *Payment
 	payment = NewPayment("Ada", "", 123, &Cash{})
 	payment.Pay()
-
 	payment = NewPayment("Bob", "0002", 888, &Bank{})
 	payment.Pay()
 }

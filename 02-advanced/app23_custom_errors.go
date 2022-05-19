@@ -7,6 +7,7 @@ import (
 )
 
 // 直接抛出错误
+
 func circleArea0(radius float64) (float64, error) {
 	if radius < 0 {
 		return 0, errors.New("Area calculation failed, radius is less than zero!")
@@ -15,6 +16,7 @@ func circleArea0(radius float64) (float64, error) {
 }
 
 // 添加额外的错误信息
+
 func circleArea1(radius float64) (float64, error) {
 	if radius < 0 {
 		return 0, fmt.Errorf("Area calculation failed, radius is %0.2f!", radius)

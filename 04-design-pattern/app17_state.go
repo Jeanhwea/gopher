@@ -3,12 +3,13 @@
 ////////////////////////////////////////////////////////////////////////////////
 package main
 
-import ("fmt")
+import (
+	"fmt"
+)
 
 type Thread struct {
 	state StateType
 }
-
 type StateType int
 
 const (

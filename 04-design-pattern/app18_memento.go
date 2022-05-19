@@ -3,15 +3,15 @@
 ////////////////////////////////////////////////////////////////////////////////
 package main
 
-import ("fmt")
+import (
+	"fmt"
+)
 
 // 备忘录模式用于保存程序内部状态到外部，又不希望暴露内部状态的情形
 type Memento interface{}
-
 type Game struct {
 	hp, mp int
 }
-
 type gameMemento struct {
 	hp, mp int
 }
@@ -43,13 +43,10 @@ func main() {
 		hp: 10,
 		mp: 10,
 	}
-
 	game.Status()
 	progress := game.Save()
-
 	game.Play(-2, -3)
 	game.Status()
-
 	game.Load(progress)
 	game.Status()
 }

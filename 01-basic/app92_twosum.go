@@ -1,6 +1,8 @@
 package main
 
-import ("fmt")
+import (
+	"fmt"
+)
 
 func twosum(arr []int, target int) [2]int {
 	var cache = make(map[int]int)

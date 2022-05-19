@@ -3,13 +3,14 @@
 ////////////////////////////////////////////////////////////////////////////////
 package main
 
-import ("fmt")
+import (
+	"fmt"
+)
 
 // 装饰模式使用对象组合的方式动态改变或增加对象行为
 type Component interface {
 	Calc() int
 }
-
 type ConcreteComponent struct{}
 
 func (*ConcreteComponent) Calc() int {
@@ -53,6 +54,5 @@ func main() {
 	c = WarpAddDecorator(c, 10)
 	c = WarpMulDecorator(c, 8)
 	res := c.Calc()
-
 	fmt.Printf("res %d\n", res)
 }

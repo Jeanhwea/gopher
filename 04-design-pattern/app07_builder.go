@@ -23,6 +23,7 @@ func NewManager(builder EmployeeBuilder) *Manager {
 }
 
 ////////////////////////////////////////////////////////////////////////////////
+
 func (this *Manager) Construct(code, name string, age int) {
 	this.builder.Code(code)
 	this.builder.Name(name)

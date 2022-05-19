@@ -18,7 +18,6 @@ func init() {
 }
 
 // go mod init 初始化 go 的模块
-
 // 包可以没有 main 方法
 func main() {
 	log.Println("Main runs!")
