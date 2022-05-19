@@ -6,7 +6,6 @@ import (
 )
 
 // 带有 default 的基本类型 switch
-
 func basicSwitch() {
 	switch time.Now().Weekday() {
 	case time.Saturday:
@@ -19,7 +18,6 @@ func basicSwitch() {
 }
 
 // 没有条件的 switch
-
 func noConditionSwitch() {
 	switch hour := time.Now().Hour(); {
 	case hour < 12:
@@ -32,7 +30,6 @@ func noConditionSwitch() {
 }
 
 // case 列表的 switch
-
 func whiteSpace(c rune) bool {
 	switch c {
 	case ' ', '\t', '\n', '\f', '\r':
@@ -42,7 +39,6 @@ func whiteSpace(c rune) bool {
 }
 
 // 带 fallthrough 的 switch
-
 func ftSwitch(in int) {
 	switch in {
 	case 1:
@@ -57,7 +53,6 @@ func ftSwitch(in int) {
 }
 
 // 带有退出循环的 switch
-
 func exitWithBreak() {
 Loop:
 	for _, ch := range "a b\nc" {
@@ -73,7 +68,6 @@ Loop:
 }
 
 // 执行顺序控制
-
 func executionOrder() {
 	foo := func(n int) int {
 		fmt.Println(n)
