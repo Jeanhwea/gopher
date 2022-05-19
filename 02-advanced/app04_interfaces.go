@@ -1,6 +1,6 @@
 package main
 
-import "fmt"
+import ("fmt")
 
 // 接口的定义方法
 type VowelsFinder interface {
