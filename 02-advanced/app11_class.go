@@ -1,6 +1,8 @@
 package main
 
-import ("fmt")
+import (
+	"fmt"
+)
 
 type Man struct {
 	name string
@@ -27,10 +29,8 @@ func (this *SuperMan) ShowLevel() {
 func main() {
 	var wang = &Man{"王大锤"}
 	fmt.Println(wang.GetName())
-
 	var batman = &SuperMan{Man{"蝙蝠侠"}, 10}
 	batman.ShowLevel()
-
 	// New 构造方法
 	var liu = NewMan("刘晓伟")
 	fmt.Println(liu)
