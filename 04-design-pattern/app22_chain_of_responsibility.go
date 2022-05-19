@@ -13,7 +13,7 @@ package main
 //
 // 同时可在职责链类中实现职责接口相关函数，使职责链对象可以当做一般职责对象是用。
 
-import "fmt"
+import ("fmt")
 
 type Manager interface {
 	HaveRight(money int) bool
