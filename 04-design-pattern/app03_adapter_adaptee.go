@@ -3,7 +3,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 package main
 
-import "fmt"
+import ("fmt")
 
 // 适配器模式用于转换一种接口适配另一种接口, Target 是适配目标, 适配目标的 Request 方法
 type Target interface {
