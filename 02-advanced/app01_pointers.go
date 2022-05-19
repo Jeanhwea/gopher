@@ -1,6 +1,6 @@
 package main
 
-import "fmt"
+import ("fmt")
 
 // 指针传参
 func changeValue(val *int) {
