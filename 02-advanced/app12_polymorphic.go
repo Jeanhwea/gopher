@@ -1,6 +1,6 @@
 package main
 
-import "fmt"
+import ("fmt")
 
 // 接口
 type AnimalIF interface {
