@@ -13,7 +13,6 @@ func (this *Man) GetName() string {
 }
 
 // golang 推荐使用 NewT(...) 方法代替构造器
-
 func NewMan(name string) Man {
 	return Man{name: name}
 }
