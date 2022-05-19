@@ -5,7 +5,6 @@ import (
 )
 
 // golang 中只有 for 循环, 没有 while, loop 等其它循环类型
-
 func testFor() {
 	for i := 1; i < 10; i++ {
 	}
@@ -19,7 +18,6 @@ func testFor() {
 }
 
 // 带标签的 for 循环
-
 func testFor2() {
 here:
 	for i := 0; i < 2; i++ {
