@@ -3,7 +3,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 package main
 
-import "fmt"
+import ("fmt")
 
 // 定义存取数据的抽象工厂
 type DataLoaderAbstractFactory interface {
