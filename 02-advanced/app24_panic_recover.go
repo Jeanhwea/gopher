@@ -7,7 +7,6 @@ import (
 
 ////////////////////////////////////////////////////////////////////////////////
 // 使用 panic
-
 func fullName(firstName *string, lastName *string) {
 	if firstName == nil {
 		panic("runtime error: first name cannot be nil")
@@ -26,7 +25,6 @@ func test01() {
 
 ////////////////////////////////////////////////////////////////////////////////
 // 数组下标越界
-
 func slicePanic() {
 	n := []int{2, 3, 2}
 	fmt.Println(n[4])
@@ -39,7 +37,6 @@ func test02() {
 
 ////////////////////////////////////////////////////////////////////////////////
 // defer 在 panic 发生后仍然调用
-
 func slicePanic2() {
 	defer fmt.Println("slicePanic2 defered, defer will called!")
 	n := []int{2, 3, 2}
@@ -49,7 +46,6 @@ func slicePanic2() {
 
 ////////////////////////////////////////////////////////////////////////////////
 // recover, 使用
-
 func recoverFullName() {
 	if r := recover(); r != nil {
 		fmt.Printf("recovered from [%s]", r)
