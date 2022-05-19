@@ -1,6 +1,6 @@
 package main
 
-import "fmt"
+import ("fmt")
 
 type Man struct {
 	name string
