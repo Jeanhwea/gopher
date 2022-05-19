@@ -1,6 +1,6 @@
 package main
 
-import "fmt"
+import ("fmt")
 
 // 全局变量定义
 var APP_NAME string
