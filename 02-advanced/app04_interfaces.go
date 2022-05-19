@@ -23,7 +23,6 @@ func (p *Person) Work() {
 }
 
 // 接口的内部表示形式 (type, value).type
-
 func describe(obj interface{}) {
 	// interface{} 表示空接口
 	fmt.Printf("Interface type %T value %v\n", obj, obj)
@@ -31,7 +30,6 @@ func describe(obj interface{}) {
 
 // 类型断言 interface.(type)
 // interface{} 是万能类型
-
 func display(arg interface{}) {
 	// 类型断言
 	value, ok := arg.(string)
@@ -43,7 +41,6 @@ func display(arg interface{}) {
 }
 
 // 类型 switch
-
 func findType(obj interface{}) {
 	switch obj.(type) {
 	case string:
