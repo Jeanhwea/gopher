@@ -1,6 +1,6 @@
 package main
 
-import "fmt"
+import ("fmt")
 
 // 闭包, 返回局部变量 outer_var
 func scope() func() int {
