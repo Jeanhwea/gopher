@@ -1,6 +1,6 @@
 package main
 
-import "fmt"
+import ("fmt")
 
 func arrayTutor() {
 	var arr1 [3]int
