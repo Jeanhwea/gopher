@@ -5,21 +5,18 @@ import (
 )
 
 // 指针传参
-
 func changeValue(val *int) {
 	*val = 666
 }
 
 // 与 C/C++ 不同, golang 返回指针的变量会逃逸到堆中
 // 即 golang 中返回指针变量是安全的
-
 func varEscape() *int {
 	i := 789
 	return &i
 }
 
 // 数组传参避免使用指针, 尽量考虑切片
-
 func modifyArr(arr []int) {
 	arr[0] = 99
 }
