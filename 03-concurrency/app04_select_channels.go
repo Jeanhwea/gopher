@@ -6,7 +6,6 @@ import (
 )
 
 // 通过 select 实现多路复用
-
 func fib(data, quit chan int) {
 	x, y := 1, 0
 	for {
@@ -35,7 +34,6 @@ func test01() {
 }
 
 ////////////////////////////////////////////////////////////////////////////////
-
 func server1(ch chan string) {
 	ch <- "from server1"
 	close(ch)
