@@ -7,7 +7,7 @@ package main
 // 桥接模式类似于策略模式，区别在于策略模式封装一系列算法使得算法可以互相替换。
 // 策略模式使抽象部分和实现部分分离，可以独立变化。
 
-import "fmt"
+import ("fmt")
 
 type AbstractMessage interface {
 	SendMessage(text, to string)
