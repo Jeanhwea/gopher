@@ -9,7 +9,6 @@ import (
 )
 
 // 获取单例的方法
-
 func GetInstance() Singleton {
 	once.Do(func() {
 		instance = &singleton{}
