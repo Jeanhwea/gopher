@@ -16,7 +16,6 @@ var APP_PORT = 9000
 // uint, uint8, uint16, uint32, uint64,
 // int, int8, int16, int32, int64,
 // float32, float64
-
 func main() {
 	// 定义变量的方法有如下几种
 	var foo1 int
