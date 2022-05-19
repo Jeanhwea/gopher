@@ -5,7 +5,6 @@ import (
 )
 
 // 闭包, 返回局部变量 outer_var
-
 func scope() func() int {
 	outer_var := 2
 	foo := func() int { return outer_var }
@@ -19,7 +18,6 @@ func another_scope() func() int {
 }
 
 // 闭包
-
 func outer() (func() int, int) {
 	outer_var := 2
 	inner := func() int {
