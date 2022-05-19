@@ -1,6 +1,6 @@
 package main
 
-import "fmt"
+import ("fmt")
 
 // golang 中只有 for 循环, 没有 while, loop 等其它循环类型
 func testFor() {
