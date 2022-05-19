@@ -1,6 +1,6 @@
 package main
 
-import "fmt"
+import ("fmt")
 
 func fib(n int) int {
 	if n <= 1 {
