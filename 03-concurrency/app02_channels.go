@@ -6,7 +6,6 @@ import (
 )
 
 // 管道的创建
-
 func test01() {
 	ch := make(chan int)
 	// 从管道 ch 中读取数据到 data 中
@@ -16,7 +15,6 @@ func test01() {
 }
 
 // 单向管道
-
 func test02() {
 	// send-only 类型的管道
 	unidirectChan := make(chan<- int)
@@ -34,7 +32,6 @@ func test02() {
 }
 
 // 使用 range 循环来读取管道
-
 func test03() {
 	chSeq := make(chan int)
 
@@ -74,7 +71,6 @@ func test04() {
 }
 
 // 使用管道编排协程
-
 func test11() {
 	fmt.Println("Main is running!")
 	cha := make(chan int)
